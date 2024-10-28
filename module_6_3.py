@@ -16,6 +16,10 @@ class Eagle:
         self.y_distance += dy
 
 class Pegasus(Horse, Eagle):
+
+    def __init__(self):
+        super().__init__()
+
     def move(self, dx, dy):
         super().run(dx)
         super().fly(dy)
